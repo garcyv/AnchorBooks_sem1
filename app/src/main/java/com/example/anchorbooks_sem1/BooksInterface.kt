@@ -6,7 +6,7 @@ import retrofit2.http.GET
 
 interface BooksInterface {
 
-    @GET("realestate")
+    @GET("books")
     suspend fun fetchBooksCoroutines(): Response<List<Books>>
 
 }

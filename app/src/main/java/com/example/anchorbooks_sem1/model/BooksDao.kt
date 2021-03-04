@@ -7,7 +7,7 @@ import androidx.room.*
 interface BooksDao {
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    suspend fun insertBook(book: Books){
+    suspend fun insertBook(book: List<Books>){
     }
 
     @Query("SELECT * from books_table")

@@ -6,7 +6,7 @@ import retrofit2.converter.gson.GsonConverterFactory
 class RetrofitClient {
 
     companion object {
-        private const  val URL_BASE = "https://android-kotlin-fun-mars-server.appspot.com/"
+        private const  val URL_BASE = "https://my-json-server.typicode.com/Himuravidal/anchorBooks/"
 
         fun retrofitInstance():BooksInterface{
             val retrofit = Retrofit.Builder()
